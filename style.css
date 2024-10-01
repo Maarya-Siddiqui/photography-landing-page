@@ -1,0 +1,181 @@
+body{
+    background-color: #22333B;
+}
+
+/*TITLE + ANIMATION*/
+.title{
+    animation: slideDown 2s ease-out;
+    color:#EAE0D5;
+    text-align: center;
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 0%;
+}
+
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*HEADING + ANIMATION*/
+h2{
+    color:#EAE0D5;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-top: 0%;
+}
+
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/*PSEUDOCLASS*/
+header::selection{
+    color:#5E503F;
+}
+
+h2::selection{
+    color:#5E503F;
+}
+
+nav{
+    width: 300px;
+    position:fixed;
+    left: 1100px;
+    top: 15px;
+}
+
+li{
+    float: left;
+    padding: 5%;
+    list-style-type: none;
+    color:#EAE0D5;
+}
+
+li:hover{
+    color: #C6AC8F;
+}
+
+/*PSEUDOELEMENT for the Home button*/
+a:focus{
+    outline-style: double;
+    outline-color: #C6AC8F;
+}
+
+
+/*LANDING PAGE IMAGES*/
+.nav-imgs{
+    animation: fadeIn 2s ease-out;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 0%;
+    padding-top: 2%;
+    padding-left:5%;
+    margin-bottom: 0%;
+    border:#C6AC8F;
+    border-style: inset;
+    background-origin: content-box;
+    background-color: #0A0908;
+    z-index: -1;
+}
+
+.nav-imgs > figure > img{
+    animation: fadeIn 2s ease-out;
+    width: 75%;
+    height: auto;
+    padding-bottom: 1%;
+    padding-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+img:hover{
+    opacity:0.2;
+}
+
+.nav-imgs > figure > img:hover + p{
+    display: block;
+    color:#EAE0D5;
+}
+
+figcaption{
+    color:#C6AC8F;
+    text-align: justify;
+    font-size: 0.8rem;
+    font-family: "Noto Nastaliq Urdu", serif;
+}
+
+/*PRICING*/
+p{
+    font-size: 1rem;
+    color: #EAE0D5;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    z-index: 1;
+    display: none;
+}
+
+.price1{
+    position: absolute;
+    left: 220px;
+    bottom: 275px;
+}
+
+.price2{
+    position: absolute;
+    left: 670px;
+    bottom: 275px;
+}
+
+.price3{
+    position: absolute;
+    left: 1135px;
+    bottom: 275px;
+}
+
+/*ORDER BUTTON*/
+.button{
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 1%;
+    bottom: 5px;
+    left:680px;
+    background-color: #C6AC8F;
+    color:#EAE0D5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #5E503F;
+    cursor:pointer;
+}
+
+footer{
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-size: 4%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color:#EAE0D5;
+}
+
